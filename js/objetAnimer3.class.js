@@ -27,7 +27,7 @@ class oRectangleanimerHorizontal{
         
         oRectangle.classList.add("rectangleIntro");
         oSectionGlobal.appendChild(oRectangle);
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.animeBorders(oRectangle,iIntervalBorders,iInterval);
         },1000);
@@ -39,7 +39,7 @@ class oRectangleanimerHorizontal{
     animeColor(oRectangle){
         oRectangle.style.transition = "background-color 1s";
         oRectangle.style.backgroundColor = "black";
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.animeColor2(oRectangle);
         },900);
@@ -63,7 +63,7 @@ class oRectangleanimerHorizontal{
     }
 
     recallAnimationBorders(oRectangle,iIntervalBorders,iInterval){
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.animeBorders(oRectangle,iIntervalBorders,iInterval);
         },25);
@@ -83,7 +83,7 @@ class oRectangleanimerHorizontal{
     }
 
     recallAnimation(oRectangle,iInterval,iIntervalHauteur){
-        var objet = this;
+        let objet = this;
         oRectangle.style.transform = "scaleY("+iIntervalHauteur+")";
         iIntervalHauteur-=0.005;
         console.log(iIntervalHauteur);
@@ -104,7 +104,7 @@ class oRectangleanimerHorizontal{
     }
 
     recallAnimation2(oRectangle,iIntervalScale,iIntervalHauteur){
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.callAnimation2(oRectangle,iIntervalScale,iIntervalHauteur);
         },5)

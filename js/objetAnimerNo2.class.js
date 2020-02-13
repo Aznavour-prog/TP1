@@ -26,7 +26,7 @@ class oRectangleanimerDown{
         oRectangle.style.zIndex = 2;
         oRectangle.classList.add("rectangleIntro");
         oSectionGlobal.appendChild(oRectangle);
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.changebackground(oRectangle);
         },1450);
@@ -38,7 +38,7 @@ class oRectangleanimerDown{
     changebackground(oRectangle){
         oRectangle.style.transition = "background-color 1s";
         oRectangle.style.backgroundColor = "lightgrey";
-        var objet = this
+        let objet = this
         setTimeout(function(){
             objet.changebackground2(oRectangle);
         },800);
@@ -59,7 +59,7 @@ class oRectangleanimerDown{
     }
 
     recallAnimation(oRectangle,iInterval){
-        var objet = this;
+        let objet = this;
         setTimeout(function(){
             objet.animeRectangle(oRectangle,iInterval);
         }, 20);
